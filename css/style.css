@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://cdn.fansshare.com/pictures/wallpaperdesktop/hotel-wallpaper-hd-widescreen-hd-desktop-wallpapers-women-wallpaper-554937808.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  header {
+    background-color: rgba(255, 255, 255, 0.5); /* Ajusta la transparencia del nav */
+    backdrop-filter: blur(10px); /* Aplica un efecto de desenfoque al fondo */
+  }
+
+header {
+  background-color: #8b2635;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .logo img {
+    height: 120px; /* Ajusta el tamaño según tus necesidades */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .logo:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo::after {
+    content: 'Reserva en FlashBack';
+    position: absolute;
+    top: 50%;
+    right: -150%;
+    border-radius: 25%;
+    transform: translateY(-50%);
+    background-color: gold;
+    border-style:none;
+    opacity: 25%;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, right 0.3s ease;
+  }
+  
+  .logo:hover::after {
+    opacity: 1;
+    visibility: visible;
+    right: -120%; /* Ajusta la posición del texto según tus necesidades */
+  }
+  
+nav ul {
+  list-style-type: none;
+ 
+ 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: 'Montserrat', sans-serif; /* Fuente personalizada */
+}
+
+nav ul li {
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: block;
+  padding: 10px;
+}
+
+nav ul li:hover {
+  transform: translateY(-10px); /* Salirse de la pantalla */
+  background-color: #000000  ; /* Fondo azul marino */
+  color: #fff; /* Color de texto blanco */
+  border-radius: 25%;
+}
+
+
+/* Estilos existentes */
+
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta la transparencia del fondo del diálogo */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Asegura que el diálogo esté por encima del contenido */
+  }
+  
+  .dialog-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 70%;
+    max-width: 500px; /* Ajusta el tamaño máximo del diálogo */
+    text-align: center;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  .close-button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    background-color: #d32f2f;
+  }
+  
+
+
+
+
+  
