@@ -231,7 +231,7 @@ nav ul li:hover {
     background-color: #ffffff;
     border-radius: 8px;
     padding: 20px;
-    width: 400px;
+    width: 500px;
     max-width: 100%;
     text-align: center;
   }
@@ -267,12 +267,109 @@ nav ul li:hover {
     margin-top: 10px;
   }
 
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
 
 
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+  }
 
-  
+  .image-grid .image-item {
+    text-align: center;
+  }
 
+  .image-grid .image-item img {
+    max-width: 100%;
+    height: auto;
+  }
 
+  .image-grid .image-item h5 {
+    margin-top: 10px;
+  }
 
+  #Instalaciones{
+    background-color: #262730;
+    color:#cccccc;
+  }
+  .image-item:hover{
+    transform: scale(1.1);
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .container .about-us {
+    flex: 1;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+
+  .container .carousel-container {
+    flex: 2;
+    padding: 20px;
+  }
+
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .carousel-slide {
+    display: flex;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .carousel-item {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .carousel-caption {
+    margin-top: 10px;
+  }
 
   
